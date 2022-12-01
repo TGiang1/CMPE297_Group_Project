@@ -10,7 +10,8 @@ queriesArray = np.round(queriesArray, 2)
 tree = mtree.MTree(d_int, max_node_size=4)  
 
 tree.add(list(queriesArray[0]))
-tree.add_all([list(queriesArray[1]), list(queriesArray[2])])
+tree.add_all([[1,2,3],[4,5,6],[1,1,1]])
 a = tree.search([1,1, 1])
+
 
 print(list(a))
