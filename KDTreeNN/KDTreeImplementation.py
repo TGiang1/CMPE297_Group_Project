@@ -105,7 +105,7 @@ def numNearestNeighbor(plotName):
         timeTakenList.append(timeTaken)
     
     plt.figure(figsize=(10,5))
-    plt.title('KDTree: K (num neighbors to search for) vs. NN search time taken (seconds) for 50k queries (10 dimensions)')
+    plt.title('KDTree: K (num neighbors to search for) vs. NN search time taken (seconds) for 50k queries (10 dimensions, leaf 64)')
     plt.xlabel('K (num neighbors to search for)')
     plt.ylabel('NN Search Time (seconds)')
     plt.plot(numNeighborsList, timeTakenList)
@@ -136,7 +136,7 @@ def numDimensions(plotName):
     
     plt.figure(figsize=(10,5))
     plt.title('KDTree: Num Dimensions vs. NN search time taken (seconds) for 50k queries (leaf size 64, k=40)')
-    plt.xlabel('K (num neighbors to search for)')
+    plt.xlabel('Num Dimensions')
     plt.ylabel('NN Search Time (seconds)')
     plt.plot(numDimensionList, timeTakenList)
 
