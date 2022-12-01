@@ -1,6 +1,8 @@
 M-tree data structure to perform k-NN searches
 =============================================
 
+Note: The open source MTree implementation is taken from https://github.com/tburette/mtree. We use the implementation for our NN cost/time exploration on our multi-dimensional dataset.
+
 [![Build Status](https://travis-ci.org/tburette/mtree.svg?branch=master)](https://travis-ci.org/tburette/mtree)
 
 This is an implementation of the M-tree, a data structure to find the element(s) the most similar to a given element.
